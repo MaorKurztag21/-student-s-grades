@@ -4,7 +4,7 @@ function range(arr){
     let max=Math.max.apply(Math,arr);
     let min=Math.min.apply(Math,arr);
     let result=max-min;
-    console.log(result);
+    return result;
 }
 
 function Median(arr){
@@ -18,7 +18,7 @@ function Median(arr){
    if(arr.length%2==1){
     sum=arr[long/2];
    }
-   console.log(sum);
+   return sum;
 }
 
 function second(arr){
@@ -27,8 +27,8 @@ function second(arr){
     let max1=Math.max.apply(Math,arr1);
     let min1=Math.min.apply(Math,arr1);
     let rang=max1-min1;
-console.log(rang);
+     return rang;
 }
 
-
-   console.log("stats:\n\tRange:" + range([73, 91, 88, 56, 62, 84, 95, 96, 88, 92]) + "\n\tMedian:" + Median([73, 91, 88, 56, 62, 84, 95, 96, 88, 92]) +"\n\tHalf range:" + second([73, 91, 88, 56, 62, 84, 95, 96, 88, 92]));
+   let arr=([73, 91, 88, 56, 62, 84, 95, 96, 88, 92]);
+   console.log("stats:\n\tRange:" + range(arr) + "\n\tMedian:" + Median(arr) +"\n\tHalf range:" + second(arr);
